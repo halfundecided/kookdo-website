@@ -150,6 +150,10 @@ nav li:nth-of-type(5) {
   background-color: #99B998
 }
 
+#upper {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
 
 /* ====================================
 open-overlay

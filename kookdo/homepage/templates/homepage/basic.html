@@ -6,46 +6,59 @@
     <meta charset="UTF-8">
     <title>국도머신(주)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="{% static 'homepage/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'homepage/css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'homepage/css/style1.css' %}">
   </head>
 
   <body>
+    <header>
+      <section class="logo">
+        <h2>국도머신</h2>
+      </section>
+      <div class="overlay-navigation">
+        <nav role="navigation">
+          <ul class="upper">
+            <li>
+              <a href="#" data-content="" id="upper">About</a>
+              <a href="#">Overview</a>
+              <a href="#">History</a>
+              <a href="#">CEO</a>
+            </li>
+            <li>
+              <a href="#" data-content="" id="upper">Product</a>
+              <a href="#">유압식 절단기</a>
+              <a href="#">유압식 절곡기</a>
+              <a href="#">코너 샤링머신</a>
+              <a href="#">CNC V-커팅머신</a>
+              <a href="#">NC 펀칭프레스</a>
+            </li>
+            <li>
+              <a href="#" data-content="" id="upper">Contact Us</a>
+              <a href="#">Info</a>
+              <a href="#">온라인 견적</a>
+              <a href="#">매각 신청</a>
+            </li>
+            <li>
+              <a href="#" data-content="" id="upper">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section class="nav">
+        <div class="open-overlay">
+          <span class="bar-top"></span>
+          <span class="bar-middle"></span>
+          <span class="bar-bottom"></span>
+        </div>
+      </section>
+    </header>
 
-    <div class="overlay-navigation">
-      <nav role="navigation">
-        <ul class="upper">
-          <li>
-            <a href="#" data-content="" id="upper">About</a>
-            <a href="#">Overview</a>
-            <a href="#">History</a>
-            <a href="#">CEO</a>
-          </li>
-          <li>
-            <a href="#" data-content="" id="upper">Product</a>
-            <a href="#">유압식 절단기</a>
-            <a href="#">유압식 절곡기</a>
-            <a href="#">코너 샤링머신</a>
-            <a href="#">CNC V-커팅머신</a>
-            <a href="#">NC 펀칭프레스</a>
-          </li>
-          <li>
-            <a href="#" data-content="" id="upper">Contact Us</a>
-            <a href="#">Info</a>
-            <a href="#">온라인 견적</a>
-            <a href="#">매각 신청</a>
-          </li>
-          <li>
-            <a href="#" data-content="" id="upper">Login</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <section class="nav">
-      <div class="open-overlay">
-        <span class="bar-top"></span>
-        <span class="bar-middle"></span>
-        <span class="bar-bottom"></span>
+    <section class="content">
+      <div class="first-content">
+        <h3>this is first content space</h3>
+      </div>
+      <div class="second-content">
+        <h3>this is second content space</h3>
       </div>
     </section>
 

@@ -8,6 +8,10 @@
     outline: none;
 }
 
+button {
+  color: rgba(0, 0, 0, .7) !important;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -24,7 +28,7 @@
 }
 
 .dropdown-content a {
-    color: #ACACAC !important;
+    color: white !important;
     text-decoration: none;
     display: block;
     text-align: center;

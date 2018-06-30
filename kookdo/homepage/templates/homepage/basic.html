@@ -10,6 +10,7 @@
     <title>국도머신(주)</title>
 
     <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'homepage/css/styles-merged.css' %}">
     <link rel="stylesheet" href="{% static 'homepage/css/style.min.css' %}">
     <link rel="stylesheet" href="{% static 'homepage/css/custom.css' %}">
@@ -29,12 +30,7 @@
 
           <nav role="navigation" class="probootstrap-nav hidden-xs">
             <ul class="probootstrap-main-nav">
-              <li class="dropdown"><button class="dropbtn">About</button>
-                <span class="dropdown-content">
-                  <a href="#">Overview</a>
-                  <a href="#">History</a>
-                  <a href="#">CEO</a>
-                </span>
+              <li class="dropdown"><button class="dropbtn"><a href="{% url 'about_overview' %}">About</a></button>
               </li>
               <li class="dropdown"><button class="dropbtn">Products</button>
                 <span class="dropdown-content">

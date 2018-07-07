@@ -48,7 +48,7 @@
                   <a href="#">매각신청</a>
                 </span>
               </li>
-              <li class="dropdown"><button class="dropbtn">Login</button>
+              <li class="dropdown"><button class="dropbtn" id="btnLogin">Login</button>
                 <!--
                 <span class="dropdown-content">
                   <a href="#">Link1</a>
@@ -119,10 +119,36 @@
       <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
     </div>
 
+    <!-- 로그인모달 -->
+    <div class="modal fade" id="logInModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Javascript -->
     <script src="{% static 'homepage/js/scripts.min.js' %}"></script>
     <script src="{% static 'homepage/js/main.min.js' %}"></script>
     <script src="{% static 'homepage/js/custom.js' %}"></script>
 
+    <script>
+      $(document).ready(function(){
+          $("#btnLogin").click(function(){
+              $("#logInModal").modal();
+          });
+      });
+    </script>
   </body>
 </html>

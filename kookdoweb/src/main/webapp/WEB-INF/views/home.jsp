@@ -1,6 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ page session="false" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<% String ctx = request.getContextPath(); %>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -26,7 +28,7 @@
 
           <nav role="navigation" class="probootstrap-nav hidden-xs">
             <ul class="probootstrap-main-nav">
-              <li class="dropdown"><button class="dropbtn"><a href="about.jsp">About</a></button>
+              <li class="dropdown"><button class="dropbtn"><a href="<%=ctx%>/about.do">About</a></button>
               </li>
               <li class="dropdown"><button class="dropbtn">Products</button>
                 <span class="dropdown-content">

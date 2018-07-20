@@ -1,15 +1,15 @@
 package kookdo.com.app;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
-public class AboutController extends AbstractAction{
+@Controller
+public class AboutController {
 
-	@Override
-	public void execute(HttpServletRequest req, HttpServletResponse res) throws Exception {
-		// TODO Auto-generated method stub
-		this.setViewPage("/about.jsp");
-		this.setRedirect(false);
+	@RequestMapping(value = "about", method = RequestMethod.GET)
+	public String home() {
+		return "about";
 	}
 
 }

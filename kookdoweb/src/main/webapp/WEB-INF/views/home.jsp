@@ -42,7 +42,7 @@
               <li class="dropdown"><button class="dropbtn">Contact Us</button>
                 <span class="dropdown-content">
                   <a href="#">Information</a>
-                  <a href="#">온라인 견적</a>
+                  <a href="<%=ctx%>/businesstripreport.do">출장보고서</a>
                   <a href="#">매각신청</a>
                 </span>
               </li>
@@ -101,7 +101,7 @@
     <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(<c:url value="/resources/img/image_3.jpg" />)"></div>
     <div class="probootstrap-text">
       <div class="probootstrap-inner probootstrap-animate">
-        <h1 class="heading">회사 소개 파트</h1>
+        <h1 class="heading">회사 소개 파트<%=ctx%></h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum asperiores dicta tempore dolores odit eveniet, vel itaque recusandae sunt consequuntur quod dolor sint non accusamus et a, sequi. Vitae, necessitatibus!</p>
         <p><a href="single-page.html" class="btn btn-primary">Learn More</a></p>
       </div>

@@ -1,10 +1,9 @@
 package kookdo.common;
 
-//command인터페이스를 상속받아 execute()를 멤버로 갖는다.
 public abstract class AbstractAction implements Command{
 
-	private String viewPage; //뷰페이지값을 가질 예정 
-	private boolean isRedirect; //이동방식이 redirect면 true, forward면 false
+	private String viewPage;  
+	private boolean isRedirect;
 	
 	
 	public String getViewPage() {

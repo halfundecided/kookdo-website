@@ -4,7 +4,6 @@
 <% String ctx = request.getContextPath(); %>
 <html>
 <jsp:include page="../commonHeader.jsp" />
-    <!-- END: header -->
 
     <!-- START: 본문 내용 -->
     <section class="content">

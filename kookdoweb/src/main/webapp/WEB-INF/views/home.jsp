@@ -55,23 +55,8 @@
     </section>
     <!-- END: 본문 내용 -->
 
-    <!-- START: footer --><!-- 나중에 싸이트맵 include 하기-->
-    <footer class="probootstrap-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>&copy; 2018 <a href="#">KD Machine</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="#">반미정박태양박우주우헤헤</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- END: footer -->
 
-    <!-- 맨 위로 버튼 -->
-    <div class="gototop js-top">
-      <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
-    </div>
-
+<jsp:include page="commonFooter.jsp" />
     <!-- 로그인모달 -->
     <!--<div class="modal fade" id="logInModal" role="dialog">
       {% if form.errors %}

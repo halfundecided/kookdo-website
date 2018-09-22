@@ -18,3 +18,8 @@
     <div class="gototop js-top">
       <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
     </div>
+    
+    <!-- Javascript -->
+    <script src="<c:url value="/resources/js/scripts.min.js" />"></script>
+    <script src="<c:url value="/resources/js/main.min.js" />"></script>
+    <script src="<c:url value="/resources/js/custom.js" />"></script>

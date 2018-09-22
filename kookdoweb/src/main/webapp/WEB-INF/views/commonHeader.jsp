@@ -19,7 +19,7 @@
 
     <header role="banner" class="probootstrap-header">
       <div class="container">
-          <a href="<%=ctx%>/home.do" class="probootstrap-logo">국도머신 로고(해더사용)</a>
+          <a href="<%=ctx%>/home.do" class="probootstrap-logo"  style="color: red">국도머신 로고(해더사용)</a>
 
           <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
           <div class="mobile-menu-overlay"></div>

@@ -23,6 +23,7 @@
 	
 	<context:component-scan base-package="kookdo.*" />
 	
-	
+	<beans:bean id="boardService" class="kookdo.conn.serviceimpl.BoardServiceImpl" />
+	<beans:bean id="BoardDAO" class="kookdo.conn.dao.BoardDAO" />
 	
 </beans:beans>

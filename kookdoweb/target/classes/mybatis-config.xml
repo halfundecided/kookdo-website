@@ -3,4 +3,14 @@
  "http://mybatis.org./dtd/mybatis-3-config.dtd">
  <configuration>
  
+ 	<typeAliases>
+		<typeAlias type="kookdo.conn.model.BoardVO" alias="boardVO"/>
+    </typeAliases>
+    
+    <!-- 
+    <mappers>
+    	<mapper  resource="kookdo.com.sqlMapper.board.xml" />
+    </mappers>
+     -->
+
  </configuration>

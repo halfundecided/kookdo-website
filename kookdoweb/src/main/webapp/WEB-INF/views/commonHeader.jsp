@@ -44,7 +44,7 @@
                   <a href="#">매각신청</a>
                 </span>
               </li>
-              <li class="dropdown"><button class="dropbtn" id="btnLogin">Login</button>
+              <li class="dropdown"><button class="dropbtn" id="btnLogin"><a href="<%=ctx%>/login.do">Login</a></button>
                 <!--
                 <span class="dropdown-content">
                   <a href="#">Link1</a>

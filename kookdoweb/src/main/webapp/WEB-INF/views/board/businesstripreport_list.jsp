@@ -81,7 +81,7 @@
 							</ul>
 						</td>
 						<td>
-							<a class="btn btn-success" href="all_borderwrite.per">글쓰기</a>
+							<a class="btn btn-success" href="borderwritemove.do">글쓰기</a>
 							<a class="btn btn-success" href="testdatainsert.do">test데이터 생성</a>
 						</td>
 					</tr>
@@ -119,7 +119,6 @@
 </form>
 
 <script src="<c:url value="/resources/js/board/function.js" />"></script>
-</body>
 
 <jsp:include page="../commonFooter.jsp" />
 </body>

@@ -100,7 +100,7 @@ public class BusinessTripReportController{
 	public String borderWriteMove(HttpServletRequest req, HttpServletResponse res) throws Exception {
 		System.out.println("borderWriteMove execute");
 		
-		req.setAttribute("test", "test");
+		req.setAttribute("test", "34234234324234");
 		
 		return "board/businesstripreport_write";
 	}

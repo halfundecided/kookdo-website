@@ -7,6 +7,35 @@ function modal_de(){
 	d_mo.submit();
 }
 
+function businesstripreport_write(){
+	businesstripreport.submit();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function test_data_insert(){
 	$.ajax({
 		url : "testdatainsert.do",

@@ -25,9 +25,7 @@ public class MySQLConnectionTest {
 			System.out.println("11");
 			System.out.println(con);
 		}catch (Exception e) {
-			System.out.println("에러");
 			e.printStackTrace();
 		}
 	}
-	
 }

@@ -5,6 +5,7 @@
  
  	<typeAliases>
 		<typeAlias type="kookdo.conn.model.BoardVO" alias="boardVO"/>
+		<typeAlias type="kookdo.conn.model.UserVO" alias="userVO"/>
     </typeAliases>
     
     <!-- 

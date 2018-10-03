@@ -1,7 +1,5 @@
 package kookdo.conn.serviceimpl;
 
-import java.util.List;
-
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -19,9 +17,9 @@ public class UserServiceImpl implements UserService{
 	private UserDAO userdao;
 	
 	@Override
-	public List<UserVO> login() throws Exception {
+	public UserVO login(String userId) throws Exception {
 		 
-        return userdao.login();
+		return userdao.login(userId);
     }
 
 }

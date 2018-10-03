@@ -1,7 +1,5 @@
 package kookdo.conn.dao;
 
-import java.util.List;
-
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
@@ -16,7 +14,8 @@ public class UserDAO {
 	@Inject
     private SqlSession sqlSession;
     
-    public List<UserVO> login() throws Exception {
-        return sqlSession.selectList("user.login", null);
+    public UserVO login(String userId) throws Exception {
+
+    	return sqlSession.selectOne("user.login", userId);
     }
 }

@@ -1,7 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page session="false" %>
-<% String ctx = request.getContextPath(); %>
+<%@ page contentType="text/html;charset=UTF-8" import="kookdo.conn.model.*" %>
+<% 
+String ctx = request.getContextPath();
+UserVO usr = (UserVO)session.getAttribute("loginUser");
+%>
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,7 +46,12 @@
                   <a href="#">매각신청</a>
                 </span>
               </li>
-              <li class="dropdown"><button class="dropbtn" id="btnLogin"><a href="<%=ctx%>/login.do">Login</a></button>
+              <c:if test="${empty sessionScope.loginUser}">
+			  	<li class="dropdown"><button class="dropbtn" id="btnLogin"><a href="<%=ctx%>/loginPage">Login</a></button>  
+			  </c:if>
+              <c:if test="${not empty sessionScope.loginUser}">
+			  	<li class="dropdown"><button class="dropbtn" id="btnLogin"><a href="<%=ctx%>/userLogout">Logout</a></button>  
+			  </c:if>
                 <!--
                 <span class="dropdown-content">
                   <a href="#">Link1</a>
